@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
  import { ComponentStory, ComponentMeta } from '@storybook/react';
-import {Accordeon} from './Accordeon';
+import {UncontrolledAccordeon} from './AccordeonUncontroller';
 import {action} from "@storybook/addon-actions";
 
 
 export default {
-    title: 'Accordeon stories',
-    component: Accordeon,
+    title: 'AccordeonUncontroller stories',
+    component: UncontrolledAccordeon,
 };
-const callback = action("accordeon mode change");//не работает
 
-export const MenuCollapsedMode = () => <Accordeon title={'menu'}  onClick={callback}  collapsed={true} />
-export const UsersllapsedMode = () => <Accordeon title={'users'}  onClick={callback} collapsed={false}/>
+
+//компонента не контролируемая-на нее нет воздействия из вне.поэтому сдесь не отдной константы
+
 
 export const ModeChanging = () => {
-    const [value, setValue] = useState<boolean>(true);
-    return  <Accordeon title={'users'}  onClick={() => setValue(!value)} collapsed={value}/>
+
+    return  <UncontrolledAccordeon title={"User"}/>
 };
 

@@ -7,7 +7,7 @@ import {Accordeon} from "./components/Accordeon/Accordeon";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordeon} from "./components/Accordeon Uncontroller/AccordeonUncontroller";
 import {UncontrolledRaiting} from "./Uncontroller_Raiting/Raiting";
-import {Textarea} from "./components/Textarea";
+import {Textarea} from "./components/Textarea/Textarea";
 import {v1} from "uuid";
 
 
