@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
- import { ComponentStory, ComponentMeta } from '@storybook/react';
 import {Accordeon} from './Accordeon';
 import {action} from "@storybook/addon-actions";
 

@@ -5,6 +5,7 @@ type AccordeonPropsType = {
     collapsed: boolean
     onClick:()=>void
 
+
 }
 
 
